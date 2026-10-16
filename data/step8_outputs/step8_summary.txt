@@ -1,0 +1,39 @@
+NASSAU CANDY DISTRIBUTOR
+STEP 8 - MULTI-OBJECTIVE OPTIMIZATION
+
+Objectives:
+1. Shipping efficiency
+2. Profitability
+3. Operational risk
+
+Method:
+A weighted scoring framework combines normalized speed,
+profitability, and risk scores.
+
+Initial weights:
+Speed: approximately 33.33%
+Profitability: approximately 33.33%
+Risk: approximately 33.33%
+
+These weights are illustrative policy choices and require
+business validation.
+
+Outputs:
+- products_requiring_shipping_attention.csv
+- optimization_input_status.csv
+- optimization_weight_sensitivity.csv
+- optimization_readiness_report.csv
+
+Important limitations:
+- Illustrative scenarios are synthetic examples.
+- No real factory reallocation ranking is established.
+- Current factory assignments remain unverified.
+- The baseline shipping model does not estimate factory-specific effects.
+- Historical gross profit is not incremental profit from reassignment.
+- Incremental transportation and manufacturing costs are not supplied.
+- Capacity and operational constraints have not been validated.
+
+Conclusion:
+The optimization framework is prepared, but evidence-based factory
+recommendations require validated assignments, factory-aware predictions,
+and defensible scenario-level financial and operational inputs.

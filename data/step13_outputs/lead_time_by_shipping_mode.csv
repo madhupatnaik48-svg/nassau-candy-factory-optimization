@@ -1,0 +1,5 @@
+Ship Mode,Record_Count,Minimum_Lead_Time,Median_Lead_Time,Mean_Lead_Time,Maximum_Lead_Time,Records_Over_730_Days
+First Class,1548,905,1272.0,1338.28,1638,1548
+Same Day,547,904,1269.0,1333.44,1636,547
+Second Class,1979,906,1273.0,1323.85,1640,1979
+Standard Class,6120,908,1274.0,1314.33,1642,6120

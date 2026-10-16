@@ -1,0 +1,3 @@
+Dataset,Total Records,Missing Order Dates,Missing Ship Dates,Minimum Order Date,Maximum Order Date,Minimum Ship Date,Maximum Ship Date,Minimum Lead Time Days,Median Lead Time Days,Mean Lead Time Days,Maximum Lead Time Days,Records Over 730 Days
+Original,10194,0,0,2024-01-02,2025-12-31,2026-06-30,2030-06-28,904,1274.0,1320.84,1642,10194
+Corrected Step 3,10194,0,0,2024-01-02,2025-12-31,2026-06-30,2030-06-28,904,1274.0,1320.84,1642,10194

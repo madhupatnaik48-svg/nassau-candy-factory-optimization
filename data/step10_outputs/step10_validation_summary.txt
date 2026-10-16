@@ -1,0 +1,38 @@
+STEP 10: TIME-BASED MODEL VALIDATION & PERFORMANCE ANALYSIS
+====================================================================
+
+Input file: data\Nassau_Candy_Feature_Engineered_Step3_CORRECTED.csv
+Rows in source file: 10,194
+Rows used after excluding invalid/missing order dates or target: 4,130
+Training records: 3,129
+Testing records: 1,001
+Training order-date range: 2024-01-02 to 2025-08-03
+Testing order-date range: 2025-08-04 to 2025-12-12
+Chronological cutoff date (first date in test period): 2025-08-04
+Training-mean baseline prediction: 1270.20 days
+
+MODEL PERFORMANCE
+--------------------------------------------------------------------
+         Validation                       Model  Training Records  Test Records  MAE (days)  RMSE (days)      R²
+Chronological 80/20 Gradient Boosting Regressor              3129          1001    172.4995     178.8413  0.0362
+Chronological 80/20      Training-Mean Baseline              3129          1001    202.6701     272.4523 -1.2367
+
+INTERPRETATION
+--------------------------------------------------------------------
+The Gradient Boosting model has lower MAE and RMSE than the training-mean baseline.
+
+IMPORTANT LIMITATIONS
+--------------------------------------------------------------------
+1. This is a chronological holdout test; it is more realistic than a random split, but it is only one test period.
+2. The supplied data has unusually long historical shipping lead times (roughly 904-1,642 days); verify the source dates and business meaning.
+3. The model features do not include factory identity. This model cannot directly estimate the effect of reallocating a product to a different factory.
+4. These results do not establish lead-time improvement, cost savings, capacity feasibility, or profit impact from reallocation.
+5. Do not use these results alone to make real operational decisions. Validate the source data and gather factory-specific cost, capacity, and routing information.
+
+OUTPUT FILES
+--------------------------------------------------------------------
+data\step10_outputs\time_based_model_comparison.csv
+data\step10_outputs\time_based_test_predictions.csv
+data\step10_outputs\step10_validation_summary.txt
+
+No existing app.py, saved model, or Step 4-Step 9 output files were modified by this script.

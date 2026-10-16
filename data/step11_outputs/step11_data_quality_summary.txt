@@ -1,0 +1,71 @@
+STEP 11: DATA QUALITY AND SHIPPING-DATE INVESTIGATION
+========================================================================
+
+INPUTS
+------------------------------------------------------------------------
+Original dataset: data\Nassau Candy Distributor.csv
+Corrected dataset: data\Nassau_Candy_Feature_Engineered_Step3_CORRECTED.csv
+Original records: 10,194
+Corrected records: 10,194
+Common Row IDs compared: 10,194
+
+DATE COMPLETENESS
+------------------------------------------------------------------------
+Original missing Order Date: 0
+Original missing Ship Date: 0
+Corrected missing Order Date: 0
+Corrected missing Ship Date: 0
+
+ROW ID QUALITY
+------------------------------------------------------------------------
+Original missing Row IDs: 0
+Corrected missing Row IDs: 0
+Original duplicate Row ID rows: 0
+Corrected duplicate Row ID rows: 0
+
+ORIGINAL VS CORRECTED DATA
+------------------------------------------------------------------------
+Order Date mismatches by Row ID: 0
+Ship Date mismatches by Row ID: 0
+Stored lead-time mismatches: 0
+
+CALCULATED LEAD-TIME STATISTICS (DAYS)
+------------------------------------------------------------------------
+count   10194.00
+mean     1320.84
+std       262.44
+min       904.00
+1%        905.00
+5%        907.00
+10%       908.00
+25%      1271.00
+50%      1274.00
+75%      1638.00
+90%      1640.00
+95%      1641.00
+99%      1642.00
+max      1642.00
+Negative lead times: 0
+Zero lead times: 0
+Lead times over 365 days: 10,194
+Lead times over 730 days: 10,194
+Order Date range: 2024-01-02 00:00:00 to 2025-12-31 00:00:00
+Ship Date range: 2026-06-30 00:00:00 to 2030-06-28 00:00:00
+
+INTERPRETATION
+------------------------------------------------------------------------
+1. Date formats are parsed separately for the original and corrected files.
+2. Date mismatches indicate differences between files, not necessarily errors.
+3. Lead times above 365 or 730 days are flagged for investigation.
+4. Long shipping durations should be confirmed with the dataset owner.
+5. Do not change dates or remove records merely to improve model metrics.
+6. Factory optimization conclusions remain provisional until date semantics are confirmed.
+
+OUTPUT FILES
+------------------------------------------------------------------------
+data/step11_outputs/step11_data_quality_summary.txt
+data/step11_outputs/shipping_lead_time_distribution.csv
+data/step11_outputs/date_consistency_by_year.csv
+data/step11_outputs/potential_data_quality_flags.csv
+
+Original and corrected source files were not modified.

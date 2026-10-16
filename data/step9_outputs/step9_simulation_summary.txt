@@ -1,0 +1,28 @@
+NASSAU CANDY - STEP 9 SIMULATION SUMMARY
+==================================================
+Historical records loaded: 10,194
+Product-region baseline rows: 53
+Total simulation rows: 265
+Factories found: 5
+Valid lead-time records: 10,194
+
+Factories:
+- Lot's O' Nuts
+- Secret Factory
+- Sugar Shack
+- The Other Factory
+- Wicked Choccy's
+
+Scenario counts:
+Scenario Type
+ALTERNATIVE_CANDIDATE    212
+CURRENT_BASELINE          53
+
+Limitations:
+- Alternative factory assignments are not validated.
+- Factory-specific lead-time predictions are unavailable.
+- Incremental scenario costs are unavailable.
+- Factory capacity constraints are unavailable.
+- Cost savings and lead-time improvements are not estimated.
+
+Output file: C:\Users\Administrator\nassau-candy-factory-optimization\data\step9_outputs\factory_reallocation_simulation.csv

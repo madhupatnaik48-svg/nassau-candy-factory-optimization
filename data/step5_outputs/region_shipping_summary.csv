@@ -1,0 +1,5 @@
+Region,Order_Count,Average_Lead_Time_Days,Median_Lead_Time_Days,Lead_Time_Std_Dev
+Interior,2335,1323.09,1274.0,262.69
+Atlantic,2986,1322.75,1274.0,256.54
+Pacific,3253,1322.19,1274.0,266.47
+Gulf,1620,1311.37,1274.0,264.73

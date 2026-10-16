@@ -1,0 +1,3 @@
+Validation,Model,Training Records,Test Records,MAE (days),RMSE (days),R²
+Chronological 80/20,Gradient Boosting Regressor,3129,1001,172.49953018066122,178.84133636702873,0.03624730642739693
+Chronological 80/20,Training-Mean Baseline,3129,1001,202.67009564420874,272.45230695085826,-1.2367156229086547

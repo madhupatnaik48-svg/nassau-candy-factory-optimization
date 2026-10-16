@@ -1,0 +1,266 @@
+Product ID,Region,Current Factory,Scenario Factory,Scenario Type,Predicted Lead Time Days,Lead Time Change Days,Lead Time Reduction Percent,Scenario Status
+CHO-MIL-31000,Interior,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Interior,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-MIL-31000,Interior,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Interior,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Interior,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Interior,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Interior,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-TRI-54000,Interior,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Interior,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Interior,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Interior,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Interior,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-NUT-13000,Interior,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Interior,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Interior,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Interior,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Interior,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-SCR-58000,Interior,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Interior,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Interior,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Atlantic,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Atlantic,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-TRI-54000,Atlantic,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Atlantic,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Atlantic,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Gulf,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Gulf,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-SCR-58000,Gulf,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Gulf,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Gulf,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Gulf,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Gulf,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-TRI-54000,Gulf,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Gulf,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Gulf,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Gulf,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Gulf,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-MIL-31000,Gulf,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Gulf,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Gulf,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Gulf,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Gulf,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-NUT-13000,Gulf,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Gulf,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Gulf,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Pacific,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Pacific,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-MIL-31000,Pacific,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Pacific,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Pacific,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Gulf,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Gulf,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-FUD-51000,Gulf,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Gulf,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Gulf,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Gulf,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Gulf,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Gulf,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Gulf,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Gulf,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+CHO-MIL-31000,Atlantic,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Atlantic,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-MIL-31000,Atlantic,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Atlantic,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-MIL-31000,Atlantic,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Atlantic,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Atlantic,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-SCR-58000,Atlantic,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Atlantic,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Atlantic,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Gulf,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Gulf,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Gulf,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Gulf,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Gulf,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+CHO-NUT-13000,Pacific,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Pacific,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-NUT-13000,Pacific,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Pacific,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Pacific,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Atlantic,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Atlantic,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Atlantic,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Atlantic,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Atlantic,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+CHO-FUD-51000,Atlantic,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Atlantic,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-FUD-51000,Atlantic,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Atlantic,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Atlantic,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Pacific,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Pacific,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-TRI-54000,Pacific,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Pacific,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-TRI-54000,Pacific,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Pacific,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Pacific,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-FUD-51000,Pacific,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Pacific,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Pacific,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Interior,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Interior,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-FUD-51000,Interior,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Interior,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-FUD-51000,Interior,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Pacific,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Pacific,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-SCR-58000,Pacific,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Pacific,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-SCR-58000,Pacific,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Pacific,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Pacific,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Pacific,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Pacific,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Pacific,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+OTH-GUM-21000,Pacific,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Pacific,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Pacific,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Pacific,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Pacific,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+OTH-GUM-21000,Interior,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Interior,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Interior,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Interior,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-GUM-21000,Interior,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+OTH-LIC-15000,Interior,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Interior,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Interior,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Interior,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Interior,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+CHO-NUT-13000,Atlantic,Wicked Choccy's,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Atlantic,Wicked Choccy's,Wicked Choccy's,CURRENT,,,,Baseline estimate required
+CHO-NUT-13000,Atlantic,Wicked Choccy's,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Atlantic,Wicked Choccy's,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+CHO-NUT-13000,Atlantic,Wicked Choccy's,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Interior,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Interior,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Interior,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Interior,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Interior,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+OTH-KAZ-38000,Atlantic,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Atlantic,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Atlantic,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Atlantic,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Atlantic,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+OTH-LIC-15000,Gulf,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Gulf,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Gulf,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Gulf,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Gulf,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+SUG-LAF-25000,Gulf,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Gulf,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Gulf,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-LAF-25000,Gulf,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Gulf,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Gulf,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Gulf,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Gulf,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Gulf,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Gulf,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+OTH-LIC-15000,Atlantic,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Atlantic,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Atlantic,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Atlantic,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Atlantic,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+OTH-LIC-15000,Pacific,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Pacific,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Pacific,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Pacific,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-LIC-15000,Pacific,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+OTH-KAZ-38000,Interior,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Interior,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Interior,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Interior,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-KAZ-38000,Interior,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+SUG-SWE-91000,Atlantic,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-SWE-91000,Atlantic,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-SWE-91000,Atlantic,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-SWE-91000,Atlantic,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-SWE-91000,Atlantic,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-NER-92000,Atlantic,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-NER-92000,Atlantic,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-NER-92000,Atlantic,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-NER-92000,Atlantic,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-NER-92000,Atlantic,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Interior,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Interior,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Interior,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-LAF-25000,Interior,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Interior,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Pacific,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Pacific,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Pacific,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Pacific,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Pacific,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+SUG-LAF-25000,Atlantic,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Atlantic,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Atlantic,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-LAF-25000,Atlantic,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Atlantic,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-SWE-91000,Interior,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-SWE-91000,Interior,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-SWE-91000,Interior,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-SWE-91000,Interior,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-SWE-91000,Interior,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-HAI-55000,Pacific,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-HAI-55000,Pacific,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-HAI-55000,Pacific,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-HAI-55000,Pacific,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-HAI-55000,Pacific,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-EVE-47000,Gulf,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-EVE-47000,Gulf,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-EVE-47000,Gulf,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-EVE-47000,Gulf,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-EVE-47000,Gulf,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-FUN-75000,Interior,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-FUN-75000,Interior,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-FUN-75000,Interior,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-FUN-75000,Interior,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-FUN-75000,Interior,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-FUN-75000,Gulf,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-FUN-75000,Gulf,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-FUN-75000,Gulf,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-FUN-75000,Gulf,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-FUN-75000,Gulf,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-EVE-47000,Pacific,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-EVE-47000,Pacific,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-EVE-47000,Pacific,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-EVE-47000,Pacific,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-EVE-47000,Pacific,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-FUN-75000,Atlantic,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-FUN-75000,Atlantic,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-FUN-75000,Atlantic,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-FUN-75000,Atlantic,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-FUN-75000,Atlantic,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Atlantic,The Other Factory,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Atlantic,The Other Factory,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Atlantic,The Other Factory,Sugar Shack,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Atlantic,The Other Factory,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+OTH-FIZ-56000,Atlantic,The Other Factory,The Other Factory,CURRENT,,,,Baseline estimate required
+SUG-LAF-25000,Pacific,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Pacific,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Pacific,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-LAF-25000,Pacific,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-LAF-25000,Pacific,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-HAI-55000,Atlantic,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-HAI-55000,Atlantic,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-HAI-55000,Atlantic,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-HAI-55000,Atlantic,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-HAI-55000,Atlantic,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-EVE-47000,Interior,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-EVE-47000,Interior,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-EVE-47000,Interior,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-EVE-47000,Interior,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-EVE-47000,Interior,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-HAI-55000,Gulf,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-HAI-55000,Gulf,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-HAI-55000,Gulf,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-HAI-55000,Gulf,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-HAI-55000,Gulf,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-SWE-91000,Pacific,Sugar Shack,Lot's O' Nuts,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-SWE-91000,Pacific,Sugar Shack,Wicked Choccy's,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-SWE-91000,Pacific,Sugar Shack,Sugar Shack,CURRENT,,,,Baseline estimate required
+SUG-SWE-91000,Pacific,Sugar Shack,Secret Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable
+SUG-SWE-91000,Pacific,Sugar Shack,The Other Factory,ALTERNATIVE,,,,Factory-specific estimate unavailable

@@ -1,0 +1,13 @@
+Priority,Scenario,Overall Score,Rank
+Speed-focused,Illustrative Scenario B,73.0,2
+Speed-focused,Illustrative Scenario A,76.0,1
+Speed-focused,Illustrative Scenario C,70.0,3
+Profit-focused,Illustrative Scenario B,83.0,1
+Profit-focused,Illustrative Scenario A,64.0,3
+Profit-focused,Illustrative Scenario C,68.0,2
+Risk-focused,Illustrative Scenario B,79.0,1
+Risk-focused,Illustrative Scenario A,70.0,2
+Risk-focused,Illustrative Scenario C,62.0,3
+Balanced,Illustrative Scenario B,78.33333333333333,1
+Balanced,Illustrative Scenario A,70.0,2
+Balanced,Illustrative Scenario C,66.66666666666666,3

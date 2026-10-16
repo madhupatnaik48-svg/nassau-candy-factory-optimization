@@ -1,0 +1,27 @@
+NASSAU CANDY DISTRIBUTOR
+STEP 9 - KPI FRAMEWORK
+
+KPIs defined:
+1. Lead Time Reduction Percentage
+2. Profit Impact Stability
+3. Scenario Evidence Readiness Score
+4. Recommendation Coverage Percentage
+5. Historical Shipping Variability
+6. Historical Gross Profit Margin
+7. Optimization Benefit Score
+
+Important distinctions:
+- Historical profitability is not incremental scenario profit.
+- Historical shipping variability is not factory-specific operational risk.
+- Evidence readiness is not a probability of recommendation correctness.
+- Factory mapping coverage is not recommendation coverage.
+- The baseline shipping model is not factory-aware.
+
+Pending evidence:
+- Validated current factory assignments
+- Factory-specific lead-time predictions
+- Scenario-level incremental financial impacts
+- Operational feasibility and capacity information
+- Validated prediction uncertainty
+
+No factory reallocation benefit is claimed by this framework.

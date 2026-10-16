@@ -1,0 +1,8 @@
+Requirement,Status,Notes
+Historical product and shipping data,Available,Validate missing values and data quality.
+Historical profitability fields,Available,Historical profit is not incremental scenario profit.
+Validated product-to-factory mapping,Pending,Current Factory assignments must be verified.
+Factory-aware lead-time predictions,Pending,The Step 4 baseline model is not factory-aware.
+Incremental scenario costs,Not supplied,Required for defensible financial-impact estimates.
+Factory capacity and feasibility constraints,Not supplied,Needed if they restrict feasible assignments.
+Model uncertainty and confidence,Pending,Requires validation of factory-specific predictions.

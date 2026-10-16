@@ -1,0 +1,9 @@
+Scenario Factory,Scenario Type,Scenario Status,Scenario_Count,Unique_Products,Unique_Regions
+Lot's O' Nuts,ALTERNATIVE,Factory-specific estimate unavailable,53,15,4
+Secret Factory,ALTERNATIVE,Factory-specific estimate unavailable,53,15,4
+Sugar Shack,ALTERNATIVE,Factory-specific estimate unavailable,36,9,4
+Sugar Shack,CURRENT,Baseline estimate required,17,6,4
+The Other Factory,ALTERNATIVE,Factory-specific estimate unavailable,37,11,4
+The Other Factory,CURRENT,Baseline estimate required,16,4,4
+Wicked Choccy's,ALTERNATIVE,Factory-specific estimate unavailable,33,10,4
+Wicked Choccy's,CURRENT,Baseline estimate required,20,5,4

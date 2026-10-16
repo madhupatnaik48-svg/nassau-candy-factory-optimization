@@ -1,0 +1,272 @@
+"""
+Step 11: Data Quality & Shipping-Date Pattern Investigation
+Project: Nassau Candy Factory Optimization
+
+Run from the project root:
+    python step11_data_quality_investigation.py
+
+Inputs:
+    data/Nassau Candy Distributor.csv
+    data/Nassau_Candy_Feature_Engineered_Step3_CORRECTED.csv
+
+Outputs:
+    data/step11_outputs/step11_data_quality_summary.txt
+    data/step11_outputs/shipping_lead_time_distribution.csv
+    data/step11_outputs/date_consistency_by_year.csv
+    data/step11_outputs/potential_data_quality_flags.csv
+
+This is an investigation only. It does not modify source data, Step 3 files,
+app.py, saved models, or Step 4-Step 10 outputs.
+"""
+
+from pathlib import Path
+import sys
+import warnings
+
+import numpy as np
+import pandas as pd
+
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+ORIGINAL_FILE = DATA_DIR / "Nassau Candy Distributor.csv"
+CORRECTED_FILE = DATA_DIR / "Nassau_Candy_Feature_Engineered_Step3_CORRECTED.csv"
+OUTPUT_DIR = DATA_DIR / "step11_outputs"
+
+DATE_COLS = ["Order Date", "Ship Date"]
+TARGET = "Shipping Lead Time Days"
+
+
+def parse_day_first(series):
+    """Parse source dates in DD-MM-YYYY format without changing the input file."""
+    return pd.to_datetime(series, errors="coerce", dayfirst=True)
+
+
+def read_csv_checked(path):
+    if not path.exists():
+        print(f"ERROR: Required input file not found:\n  {path}")
+        sys.exit(1)
+    return pd.read_csv(path, low_memory=False)
+
+
+def safe_count(mask):
+    return int(mask.fillna(False).sum()) if hasattr(mask, "fillna") else int(np.asarray(mask).sum())
+
+
+def main():
+    original = read_csv_checked(ORIGINAL_FILE)
+    corrected = read_csv_checked(CORRECTED_FILE)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    required_original = ["Row ID", "Order ID", "Order Date", "Ship Date"]
+    missing_original = [c for c in required_original if c not in original.columns]
+    if missing_original:
+        print("ERROR: Original dataset is missing required columns:", ", ".join(missing_original))
+        sys.exit(1)
+
+    required_corrected = ["Row ID", "Order Date", "Ship Date", TARGET]
+    missing_corrected = [c for c in required_corrected if c not in corrected.columns]
+    if missing_corrected:
+        print("ERROR: Corrected Step 3 dataset is missing required columns:", ", ".join(missing_corrected))
+        sys.exit(1)
+
+    for frame in (original, corrected):
+        for col in DATE_COLS:
+            frame[col] = parse_day_first(frame[col])
+
+    original["_calculated_lead_time_days"] = (
+        original["Ship Date"] - original["Order Date"]
+    ).dt.days
+    corrected["_calculated_lead_time_days"] = (
+        corrected["Ship Date"] - corrected["Order Date"]
+    ).dt.days
+    corrected[TARGET] = pd.to_numeric(corrected[TARGET], errors="coerce")
+
+    # Check duplicate/missing row identifiers and compare source to corrected Step 3 by Row ID.
+    original_duplicate_ids = int(original["Row ID"].duplicated(keep=False).sum())
+    corrected_duplicate_ids = int(corrected["Row ID"].duplicated(keep=False).sum())
+    original_missing_ids = int(original["Row ID"].isna().sum())
+    corrected_missing_ids = int(corrected["Row ID"].isna().sum())
+
+    original_keyed = original.dropna(subset=["Row ID"]).drop_duplicates("Row ID").set_index("Row ID")
+    corrected_keyed = corrected.dropna(subset=["Row ID"]).drop_duplicates("Row ID").set_index("Row ID")
+    common_ids = original_keyed.index.intersection(corrected_keyed.index)
+
+    date_comparison = pd.DataFrame(index=common_ids)
+    for col in DATE_COLS:
+        date_comparison[f"Original {col}"] = original_keyed.loc[common_ids, col]
+        date_comparison[f"Corrected {col}"] = corrected_keyed.loc[common_ids, col]
+        date_comparison[f"{col} Match"] = (
+            date_comparison[f"Original {col}"] == date_comparison[f"Corrected {col}"]
+        )
+    date_comparison["Original Calculated Lead Time Days"] = original_keyed.loc[
+        common_ids, "_calculated_lead_time_days"
+    ]
+    date_comparison["Corrected Calculated Lead Time Days"] = corrected_keyed.loc[
+        common_ids, "_calculated_lead_time_days"
+    ]
+    date_comparison["Stored Step 3 Lead Time Days"] = corrected_keyed.loc[common_ids, TARGET]
+    date_comparison["Stored Lead Time Matches Calculated"] = (
+        date_comparison["Stored Step 3 Lead Time Days"]
+        == date_comparison["Corrected Calculated Lead Time Days"]
+    )
+
+    # Build row-level flags using the corrected data and source order IDs.
+    flags = corrected.copy()
+    flags["Flag Missing Order Date"] = flags["Order Date"].isna()
+    flags["Flag Missing Ship Date"] = flags["Ship Date"].isna()
+    flags["Flag Negative Lead Time"] = flags["_calculated_lead_time_days"] < 0
+    flags["Flag Zero Lead Time"] = flags["_calculated_lead_time_days"] == 0
+    flags["Flag Lead Time Over 365 Days"] = flags["_calculated_lead_time_days"] > 365
+    flags["Flag Lead Time Over 730 Days"] = flags["_calculated_lead_time_days"] > 730
+    flags["Flag Stored Lead Time Mismatch"] = (
+        flags[TARGET] != flags["_calculated_lead_time_days"]
+    )
+    flags["Flag Missing Row ID"] = flags["Row ID"].isna()
+    flags["Flag Duplicate Row ID"] = flags["Row ID"].duplicated(keep=False)
+
+    original_id_map = original.dropna(subset=["Row ID"]).drop_duplicates("Row ID").set_index("Row ID")
+    flags["Order ID"] = flags["Row ID"].map(original_id_map["Order ID"])
+    flags["Order ID Year Token"] = flags["Order ID"].astype("string").str.extract(r"-(\d{4})-")[0]
+    flags["Order Date Year"] = flags["Order Date"].dt.year
+    flags["Flag Order ID Year Differs From Order Date"] = (
+        pd.to_numeric(flags["Order ID Year Token"], errors="coerce")
+        != flags["Order Date Year"]
+    )
+    flag_cols = [c for c in flags.columns if c.startswith("Flag ")]
+    flags["Number of Flags"] = flags[flag_cols].sum(axis=1)
+    flagged = flags.loc[flags["Number of Flags"] > 0].copy()
+
+    # Lead-time distribution by exact day and broad bands.
+    lead = pd.to_numeric(corrected["_calculated_lead_time_days"], errors="coerce")
+    distribution = (
+        pd.DataFrame({"Calculated Lead Time Days": lead})
+        .dropna()
+        .groupby("Calculated Lead Time Days")
+        .size()
+        .rename("Record Count")
+        .reset_index()
+        .sort_values("Calculated Lead Time Days")
+    )
+    distribution["Percent of Records"] = distribution["Record Count"] / max(len(corrected), 1) * 100
+
+    corrected["Order Year"] = corrected["Order Date"].dt.year
+    corrected["Ship Year"] = corrected["Ship Date"].dt.year
+    corrected["Lead Time Band"] = pd.cut(
+        corrected["_calculated_lead_time_days"],
+        bins=[-np.inf, 0, 30, 90, 365, 730, np.inf],
+        labels=["Negative", "0-30 days", "31-90 days", "91-365 days", "366-730 days", "Over 730 days"],
+        right=True,
+    )
+    year_table = (
+        corrected.groupby(["Order Year", "Ship Year", "Lead Time Band"], dropna=False, observed=False)
+        .size()
+        .rename("Record Count")
+        .reset_index()
+    )
+
+    lead_stats = lead.describe(percentiles=[0.01, 0.10, 0.25, 0.50, 0.75, 0.90, 0.99])
+    source_date_missing = {
+        f"Original missing {col}": int(original[col].isna().sum()) for col in DATE_COLS
+    }
+    corrected_date_missing = {
+        f"Corrected missing {col}": int(corrected[col].isna().sum()) for col in DATE_COLS
+    }
+    date_mismatch_order = int((~date_comparison["Order Date Match"]).sum()) if len(date_comparison) else 0
+    date_mismatch_ship = int((~date_comparison["Ship Date Match"]).sum()) if len(date_comparison) else 0
+    lead_mismatch = int((~date_comparison["Stored Lead Time Matches Calculated"]).sum()) if len(date_comparison) else 0
+
+    # Save only the relevant columns in the row-level flags file.
+    preferred_cols = [
+        "Row ID", "Order ID", "Order Date", "Ship Date", TARGET,
+        "_calculated_lead_time_days", "Order ID Year Token", "Order Date Year",
+        *flag_cols, "Number of Flags",
+    ]
+    flagged[preferred_cols].to_csv(
+        OUTPUT_DIR / "potential_data_quality_flags.csv", index=False
+    )
+    distribution.to_csv(OUTPUT_DIR / "shipping_lead_time_distribution.csv", index=False)
+    year_table.to_csv(OUTPUT_DIR / "date_consistency_by_year.csv", index=False)
+
+    report = [
+        "STEP 11: DATA QUALITY & SHIPPING-DATE PATTERN INVESTIGATION",
+        "=" * 72,
+        "",
+        "INPUTS",
+        "-" * 72,
+        f"Original dataset: {ORIGINAL_FILE.relative_to(BASE_DIR)}",
+        f"Corrected Step 3 dataset: {CORRECTED_FILE.relative_to(BASE_DIR)}",
+        f"Original row count: {len(original):,}",
+        f"Corrected Step 3 row count: {len(corrected):,}",
+        f"Common Row IDs compared: {len(common_ids):,}",
+        "",
+        "DATE COMPLETENESS",
+        "-" * 72,
+        *[f"{k}: {v:,}" for k, v in source_date_missing.items()],
+        *[f"{k}: {v:,}" for k, v in corrected_date_missing.items()],
+        "",
+        "ROW ID CHECKS",
+        "-" * 72,
+        f"Original duplicate Row ID rows: {original_duplicate_ids:,}",
+        f"Corrected duplicate Row ID rows: {corrected_duplicate_ids:,}",
+        f"Original missing Row IDs: {original_missing_ids:,}",
+        f"Corrected missing Row IDs: {corrected_missing_ids:,}",
+        "",
+        "ORIGINAL VS CORRECTED STEP 3",
+        "-" * 72,
+        f"Order Date mismatches by Row ID: {date_mismatch_order:,}",
+        f"Ship Date mismatches by Row ID: {date_mismatch_ship:,}",
+        f"Stored Step 3 lead-time mismatches vs calculated dates: {lead_mismatch:,}",
+        "",
+        "CALCULATED SHIPPING LEAD-TIME SUMMARY (DAYS)",
+        "-" * 72,
+        lead_stats.to_string(float_format=lambda value: f"{value:.2f}"),
+        f"Negative lead times: {int((lead < 0).sum()):,}",
+        f"Zero lead times: {int((lead == 0).sum()):,}",
+        f"Lead times over 365 days: {int((lead > 365).sum()):,}",
+        f"Lead times over 730 days: {int((lead > 730).sum()):,}",
+        f"Order Date range: {corrected['Order Date'].min()} to {corrected['Order Date'].max()}",
+        f"Ship Date range: {corrected['Ship Date'].min()} to {corrected['Ship Date'].max()}",
+        "",
+        "ORDER ID YEAR TOKEN CHECK",
+        "-" * 72,
+        f"Rows where Order ID year token differs from Order Date year: {int(flags['Flag Order ID Year Differs From Order Date'].sum()):,}",
+        "Note: Order IDs can follow a business-specific numbering convention; this is a review flag, not proof of an error.",
+        "",
+        "INTERPRETATION AND LIMITATIONS",
+        "-" * 72,
+        "1. Lead times above 365 or 730 days are flagged for review, not automatically classified as wrong.",
+        "2. Date parsing and arithmetic checks can identify inconsistencies but cannot establish the true business meaning of the supplied dates.",
+        "3. Do not change dates or remove rows solely to make model metrics look better.",
+        "4. Confirm with the dataset owner whether Order Date and Ship Date are intended to represent actual order and shipment events.",
+        "5. The project data has unusually long shipping durations; predictions and factory-reallocation claims should remain provisional until the data meaning is confirmed.",
+        "",
+        "OUTPUT FILES",
+        "-" * 72,
+        "data/step11_outputs/step11_data_quality_summary.txt",
+        "data/step11_outputs/shipping_lead_time_distribution.csv",
+        "data/step11_outputs/date_consistency_by_year.csv",
+        "data/step11_outputs/potential_data_quality_flags.csv",
+        "",
+        "No source data, app.py, saved models, or Step 3-Step 10 files were modified.",
+    ]
+    (OUTPUT_DIR / "step11_data_quality_summary.txt").write_text(
+        "\n".join(report), encoding="utf-8"
+    )
+
+    print("\nSTEP 11 COMPLETED")
+    print("=" * 50)
+    print(f"Original records: {len(original):,}")
+    print(f"Corrected Step 3 records: {len(corrected):,}")
+    print(f"Common Row IDs compared: {len(common_ids):,}")
+    print(f"Missing dates in corrected data: {int(corrected['Order Date'].isna().sum() + corrected['Ship Date'].isna().sum()):,}")
+    print(f"Lead times over 365 days: {int((lead > 365).sum()):,}")
+    print(f"Lead times over 730 days: {int((lead > 730).sum()):,}")
+    print(f"Rows flagged for review: {len(flagged):,}")
+    print("\nOutputs saved to:")
+    print(f"  {OUTPUT_DIR}")
+    print("\nThis step flags potential issues; it does not alter or automatically clean your data.")
+
+
+if __name__ == "__main__":
+    main()

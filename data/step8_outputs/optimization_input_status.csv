@@ -1,0 +1,11 @@
+Optimization Input,Current Status,Required For Real Optimization
+Historical shipping lead time,"Available in historical dataset, subject to data quality",Yes
+Historical gross profit,"Available in historical dataset, subject to data quality",Useful for financial context
+Historical sales,"Available in historical dataset, subject to data quality",Useful for financial context
+Historical cost,"Available in historical dataset, subject to data quality",Useful for financial context
+Validated current factory,Not yet confirmed,Yes
+Predicted lead time for alternative factory,Not available from the baseline model,Yes
+Incremental reassignment cost,Not supplied,Required for defensible financial-impact estimates
+Factory capacity constraints,Not supplied,Required if capacity limits affect feasibility
+Factory-specific operational risk,Not established,Required for risk-aware recommendations
+Prediction uncertainty,Requires factory-aware model validation,Required for confidence-aware recommendations

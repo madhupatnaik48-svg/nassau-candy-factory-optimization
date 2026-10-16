@@ -1,0 +1,5 @@
+Product ID,Order_Lines,Total_Sales,Total_Gross_Profit,Total_Cost,Average_Sales,Average_Gross_Profit,Average_Shipping_Lead_Time,Shipping_Lead_Time_Std,Gross Profit Margin (%),Shipping Attention Flag
+SUG-HAI-55000,4,76.5,59.5,17.0,19.125,14.875,1455.25,209.87674954601337,77.77777777777779,Above historical 75th percentile
+SUG-EVE-47000,3,130.0,104.0,26.0,43.333333333333336,34.666666666666664,1394.6666666666667,213.3361978974345,80.0,Above historical 75th percentile
+SUG-SWE-91000,10,61.5,28.7,32.8,6.15,2.87,1383.5,246.6888503538189,46.66666666666666,Above historical 75th percentile
+SUG-LAF-25000,10,53.73,33.480000000000004,20.25,5.372999999999999,3.3480000000000003,1383.1,246.56369472320043,62.31155778894474,Above historical 75th percentile

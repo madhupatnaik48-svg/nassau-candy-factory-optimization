@@ -1,0 +1,5 @@
+Ship Mode,Order_Count,Average_Lead_Time_Days,Median_Lead_Time_Days,Lead_Time_Std_Dev
+First Class,1548,1338.28,1272.0,265.63
+Same Day,547,1333.44,1269.0,253.81
+Second Class,1979,1323.85,1273.0,261.81
+Standard Class,6120,1314.33,1274.0,262.4

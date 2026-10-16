@@ -1,0 +1,9 @@
+KPI,Status,Reason
+Lead Time Reduction (%),Pending,Comparable factory-specific scenario lead times unavailable
+Profit Impact Stability,Pending,Incremental scenario profit estimates unavailable
+Scenario Evidence Readiness Score,Available,Can score the completeness of supporting evidence
+Factory Mapping Coverage (%),Available,Can measure products with valid factory assignments
+Recommendation Coverage (%),Pending,Requires validated recommendations
+Historical Shipping Variability,Available,Calculated from historical shipping lead times
+Historical Gross Profit Margin (%),Available,Calculated from historical sales and gross profit
+Optimization Benefit Score,Framework ready,Requires validated scenario component scores

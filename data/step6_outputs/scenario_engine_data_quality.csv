@@ -1,0 +1,8 @@
+Check,Result,Status
+Products in historical dataset,15,Measured
+Factories in scenario configuration,5,Configuration supplied
+Products with valid factory assignments,15,Measured from mapping
+Products with ambiguous current assignments,0,Requires validation
+Scenario rows with predicted lead times,0,Must be supported by a factory-aware model
+Incremental factory reassignment cost,Not available,Not supported by the supplied data
+Actual road shipping distance,Not calculated,Destination coordinates and route data required

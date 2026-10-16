@@ -1,0 +1,17 @@
+Metric,Value
+Total Rows,10194
+Total Columns,20
+Exact Duplicate Rows,0
+Duplicate Row IDs,0
+Duplicate Order IDs,1645
+Total Missing Cells,0
+Unique Products,15
+Unique Product IDs,15
+Unique Regions,4
+Unique Shipping Modes,4
+Invalid Order Dates,0
+Invalid Ship Dates,0
+Negative Shipping Lead Times,0
+Zero-Day Shipping Lead Times,0
+Lead Times Over 365 Days,10194
+Factory Assignment Columns Found,0

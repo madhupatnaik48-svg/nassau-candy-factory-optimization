@@ -1,0 +1,5 @@
+Dataset,Date Column,Total Records,Missing or Blank Dates,Nonblank Values That Failed Parsing,Successfully Parsed Dates
+Original,Order Date,10194,0,0,10194
+Original,Ship Date,10194,0,0,10194
+Corrected Step 3,Order Date,10194,0,0,10194
+Corrected Step 3,Ship Date,10194,0,0,10194

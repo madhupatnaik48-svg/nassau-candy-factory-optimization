@@ -1,0 +1,35 @@
+Product ID,Product Name,Region,Order_Count,Average_Lead_Time_Days,Median_Lead_Time_Days,Average_Gross_Profit,Total_Gross_Profit,Average_Cost,Average_Sales
+SUG-LAF-25000,Laffy Taffy,Atlantic,6,1456.17,1455.0,2.89,17.36,1.75,4.64
+OTH-LIC-15000,Lickable Wallpaper,Atlantic,35,1387.83,1275.0,39.71,1390.0,39.71,79.43
+CHO-NUT-13000,Wonka Bar - Nutty Crunch Surprise,Atlantic,490,1360.43,1274.0,9.44,4623.93,3.79,13.23
+SUG-SWE-91000,SweeTARTS,Atlantic,5,1347.6,1275.0,3.36,16.8,3.84,7.2
+OTH-GUM-21000,Wonka Gum,Gulf,26,1343.69,1275.0,3.0,78.0,2.77,5.77
+CHO-TRI-54000,Wonka Bar - Triple Dazzle Caramel,Pacific,676,1332.13,1274.0,9.4,6357.75,4.99,14.4
+CHO-MIL-31000,Wonka Bar - Milk Chocolate,Interior,499,1331.98,1274.0,7.9,3943.59,4.27,12.17
+CHO-SCR-58000,Wonka Bar -Scrumdiddlyumptious,Pacific,672,1331.28,1274.0,9.18,6170.0,4.04,13.22
+CHO-SCR-58000,Wonka Bar -Scrumdiddlyumptious,Interior,459,1329.91,1274.0,9.38,4307.5,4.13,13.51
+CHO-NUT-13000,Wonka Bar - Nutty Crunch Surprise,Interior,452,1329.85,1274.0,9.33,4218.06,3.75,13.08
+CHO-TRI-54000,Wonka Bar - Triple Dazzle Caramel,Gulf,330,1328.67,1274.0,9.08,2996.35,4.82,13.9
+CHO-MIL-31000,Wonka Bar - Milk Chocolate,Pacific,666,1326.02,1274.0,8.57,5709.66,4.63,13.2
+CHO-TRI-54000,Wonka Bar - Triple Dazzle Caramel,Atlantic,558,1323.58,1274.0,9.16,5110.7,4.86,14.02
+CHO-NUT-13000,Wonka Bar - Nutty Crunch Surprise,Gulf,296,1322.61,1274.0,9.15,2709.12,3.68,12.83
+OTH-LIC-15000,Lickable Wallpaper,Interior,15,1321.47,1274.0,47.33,710.0,47.33,94.67
+CHO-FUD-51000,Wonka Bar - Fudge Mallows,Atlantic,548,1321.17,1273.0,8.79,4819.2,4.4,13.19
+CHO-TRI-54000,Wonka Bar - Triple Dazzle Caramel,Interior,451,1316.33,1274.0,9.19,4145.4,4.88,14.07
+CHO-SCR-58000,Wonka Bar -Scrumdiddlyumptious,Gulf,310,1314.55,1274.0,9.7,3007.5,4.27,13.97
+CHO-FUD-51000,Wonka Bar - Fudge Mallows,Pacific,569,1314.43,1274.0,9.4,5349.6,4.7,14.1
+OTH-GUM-21000,Wonka Gum,Atlantic,37,1312.76,1273.0,2.97,109.85,2.74,5.71
+OTH-GUM-21000,Wonka Gum,Pacific,28,1311.75,1274.0,1.79,50.05,1.65,3.44
+CHO-FUD-51000,Wonka Bar - Fudge Mallows,Interior,410,1311.57,1273.0,9.34,3828.0,4.67,14.0
+OTH-LIC-15000,Lickable Wallpaper,Gulf,10,1309.5,1273.5,37.0,370.0,37.0,74.0
+OTH-KAZ-38000,Kazookles,Pacific,30,1309.47,1273.0,0.88,26.25,10.5,11.38
+CHO-MIL-31000,Wonka Bar - Milk Chocolate,Atlantic,639,1309.32,1274.0,7.71,4928.96,4.17,11.88
+OTH-LIC-15000,Lickable Wallpaper,Pacific,34,1305.53,1273.5,42.94,1460.0,42.94,85.88
+CHO-SCR-58000,Wonka Bar -Scrumdiddlyumptious,Atlantic,623,1305.37,1273.0,9.43,5872.5,4.15,13.57
+CHO-FUD-51000,Wonka Bar - Fudge Mallows,Gulf,291,1304.58,1273.0,8.92,2596.8,4.46,13.39
+CHO-NUT-13000,Wonka Bar - Nutty Crunch Surprise,Pacific,572,1304.45,1273.0,9.21,5268.84,3.7,12.91
+CHO-MIL-31000,Wonka Bar - Milk Chocolate,Gulf,333,1289.73,1274.0,8.59,2861.16,4.64,13.23
+OTH-KAZ-38000,Kazookles,Atlantic,37,1273.11,1273.0,1.01,37.25,12.08,13.09
+OTH-GUM-21000,Wonka Gum,Interior,29,1260.21,1273.0,2.51,72.8,2.32,4.83
+OTH-KAZ-38000,Kazookles,Gulf,18,1252.5,1273.0,1.08,19.5,13.0,14.08
+OTH-KAZ-38000,Kazookles,Interior,11,1206.64,1273.0,0.89,9.75,10.64,11.52

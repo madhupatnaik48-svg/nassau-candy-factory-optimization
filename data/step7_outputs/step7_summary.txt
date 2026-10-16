@@ -1,0 +1,14 @@
+NASSAU CANDY DISTRIBUTOR - STEP 7
+PROFITABILITY, OPERATIONAL RISK, AND FINANCIAL IMPACT
+
+Historical financial metrics are calculated from the supplied data.
+Shipping variability is used as an exploratory risk indicator.
+Profit stability refers to historical gross-profit variability.
+
+Limitations:
+- Current product-to-factory assignments have not been validated.
+- The baseline shipping model is not factory-aware.
+- Incremental factory transportation and manufacturing costs
+  are not supported by the currently identified data.
+- Historical gross profit is not incremental scenario profit.
+- Factory-specific reallocation recommendations remain pending.
