@@ -27,7 +27,7 @@ STEP9_DIR = DATA_DIR / "step9_outputs"
 HISTORICAL_FILE = DATA_DIR / "Nassau Candy Distributor.csv"
 
 ENGINEERED_FILE = (
-    DATA_DIR / "Nassau_Candy_Feature_Engineered_Step3.csv"
+    DATA_DIR / "Nassau_Candy_Feature_Engineered_Step3_CORRECTED.csv"
 )
 
 SIMULATION_FILE = STEP9_DIR / "factory_reallocation_simulation.csv"
