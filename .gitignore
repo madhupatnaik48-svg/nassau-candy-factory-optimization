@@ -6,3 +6,13 @@ venv/
 .env
 .DS_Store
 Thumbs.db
+# Jupyter checkpoint files
+.ipynb_checkpoints/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
